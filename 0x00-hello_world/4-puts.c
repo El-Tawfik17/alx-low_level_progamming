@@ -7,7 +7,7 @@
 int main(void)
 {
 	/*string initialization*/
-	char MyString[] = "/"Progamming is like building a multilingual puzzle";
+	char MyString[] = ""/Progamming is like building a multilingual puzzle";
 	/*string printing*/
 	puts(MyString);
 	return (0);
