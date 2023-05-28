@@ -12,10 +12,10 @@ int main(void)
 	/*initialisation */
 	c = 'a';
 	/*printing*/
-	while ((c <= 'z))
+	while (c <= 'z')
 	{
-			putchar(c);
-			c++;
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
