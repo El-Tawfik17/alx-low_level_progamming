@@ -13,7 +13,7 @@ int main(void)
 	c = 'a';
 	C = 'A';
 	/*printing*/
-	while ((c < 'z') || (C < 'Z'))
+	while ((c <= 'z') || (C <= 'Z'))
 	{
 		if (c < 'z')
 		{
