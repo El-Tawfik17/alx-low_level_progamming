@@ -13,9 +13,9 @@ int main(void)
 	c = 'a';
 	C = 'A';
 	/*printing*/
-	while ((c < ('a' + 27)) || (C < ('A' + 27)))
+	while ((c < 'z') || (C < 'Z'))
 	{
-		if (c < ('a' + 27))
+		if (c < 'z')
 		{
 			putchar(c);
 			c++;
