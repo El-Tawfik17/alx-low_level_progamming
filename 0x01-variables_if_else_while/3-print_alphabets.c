@@ -8,15 +8,22 @@
 int main(void)
 {
 	/*declaring variable*/
-	char c;
+	char c, C;
 	/*initialisation */
 	c = 'a';
+	C = 'A';
 	/*printing*/
-	while (c < ('a' + 24))
+	while (c < ('a' + 27))
 	{
 		putchar(c);
 		c++;
 	}
+	while (C < ('A' + 27))
+	{
+		putchar(C);
+		C++;
+	}
+
 	putchar('\n');
 	return (0);
 }
