@@ -13,17 +13,18 @@ int main(void)
 	c = 'a';
 	C = 'A';
 	/*printing*/
-	while (c < ('a' + 27))
+	while ((c < ('a' + 27)) || (C < ('A' + 27)))
 	{
-		putchar(c);
-		c++;
+		if (c < ('a' + 27))
+		{
+			putchar(c);
+			c++;
+		} else
+		{
+			putchar(C);
+			C++;
+		}
 	}
-	while (C < ('A' + 27))
-	{
-		putchar(C);
-		C++;
-	}
-
 	putchar('\n');
 	return (0);
 }
