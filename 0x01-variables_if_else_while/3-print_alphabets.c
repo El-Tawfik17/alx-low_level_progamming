@@ -9,7 +9,6 @@ int main(void)
 {
 	/*declaring variable*/
 	char c;
-	int i;
 	/*initialisation */
 	c = 'a';
 	/*printing*/
