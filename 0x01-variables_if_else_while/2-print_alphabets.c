@@ -8,22 +8,14 @@
 int main(void)
 {
 	/*declaring variable*/
-	char c, C;
+	char c;
 	/*initialisation */
 	c = 'a';
-	C = 'A';
 	/*printing*/
-	while ((c <= 'z') || (C <= 'Z'))
+	while ((c <= 'z))
 	{
-		if (c <= 'z')
-		{
 			putchar(c);
 			c++;
-		} else
-		{
-			putchar(C);
-			C++;
-		}
 	}
 	putchar('\n');
 	return (0);
