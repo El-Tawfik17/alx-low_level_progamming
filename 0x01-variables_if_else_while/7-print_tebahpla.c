@@ -12,7 +12,7 @@ int main(void)
 	/*initialisation */
 	c = 'z';
 	/*printing*/
-	while (c <= 'a')
+	while (c >= 'a')
 	{
 		putchar(c);
 		c--;
