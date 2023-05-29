@@ -20,7 +20,7 @@ int main(void)
 	{
 		while (ii < 10)
 		{
-			iiii = ii + 1
+			iiii = ii + 1;
 			while (iii < 10)
 			{
 				while (iiii < 10)
