@@ -18,13 +18,10 @@ int main(void)
 	/*printing*/
 	while (i < 10)
 	{
-		i = 0;
 		while (ii < 10)
 		{
-			iii = 0;
 			while (iii < 10)
 			{
-				iiii = 0;
 				while (iiii < 10)
 				{
 					putchar(i + '0');
@@ -40,10 +37,13 @@ int main(void)
 					iiii++;
 				}
 				iii++;
+				iiii = 0;
 			}
 			ii++;
+			iii = 0;
 		}
 		i++;
+		ii = 0;
 	}
 	putchar('\n');
 	return (0);
