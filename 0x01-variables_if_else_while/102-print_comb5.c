@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	int ii, iii, iiii;
 	/*initialisation */
-	iiii = 1;
+	iiii = 0;
 	i = 0;
 	ii = 0;
 	iii = 0;
@@ -20,6 +20,7 @@ int main(void)
 	{
 		while (ii < 10)
 		{
+			iiii = ii + 1
 			while (iii < 10)
 			{
 				while (iiii < 10)
