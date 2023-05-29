@@ -15,10 +15,10 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i + '0');
-		if (i <=8)
+		if (i <= 8)
 		{
 			putchar(',');
-			putchar('\t');
+			putchar(' ');
 		}
 		i++;
 	}
