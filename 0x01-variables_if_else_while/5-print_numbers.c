@@ -12,10 +12,10 @@ int main(void)
 	/*initialisation */
 	i = 0;
 	/*printing*/
-	while (c < 10)
+	while (i < 10)
 	{
-		printf("%d", c);
-		c++;
+		printf("%d", i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
