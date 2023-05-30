@@ -15,24 +15,24 @@ void times_table(void)
 		while (j < 10)
 		{
 			cmp = i * j;
+			if (j > 1 && cmp <= 9)
+			{
+				_putchar(' ');
+				_putchar(' ');
+			} else if (j > 1 && cmp > 9)
+			{
+				_putchar(' ');
+			}
 			if (cmp <= 9)
 			{
 				_putchar(cmp + '0');
+				_putchar(',');
 			} else
 			{
 				lstd = cmp % 10;
 				fstd = (cmp - lstd) / 10;
 				_putchar(fstd + '0');
 				_putchar(lstd + '0');
-			}
-			if (j > 1 && cmp <= 9)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(',');
-			} else if (j > 1 && cmp > 9)
-			{
-				_putchar(' ');
 				_putchar(',');
 			}
 			j++;
