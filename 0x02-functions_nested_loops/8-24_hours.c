@@ -10,11 +10,13 @@ void jack_bauer(void)
 	int i, ii, iii, iiii;
 	/*Initialization*/
 	i = ii = iii = iiii = 0;
-	while (i < 10)
+	while (i < 3)
 	{
 		while (ii < 10)
 		{
-			while (iii < 10)
+			if (i == 2 && ii == 4)
+				break;
+			while (iii < 6)
 			{
 				while (iiii < 10)
 				{
