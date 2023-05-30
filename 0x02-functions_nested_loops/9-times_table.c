@@ -25,10 +25,14 @@ void times_table(void)
 				_putchar(fstd + '0');
 				_putchar(lstd + '0');
 			}
-			if (j <= 8)
+			if (j <= 8 && cmp <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+			} else if (j <= 8 && cmp > 9)
+			{
+				_putchar(',');
 				_putchar(' ');
 			}
 			j++;
