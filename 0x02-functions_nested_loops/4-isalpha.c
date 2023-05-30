@@ -3,6 +3,7 @@
  * _isalpha - function
  * Description:This function checks alphabet
  * it return 1 if it is alphabet and 0 otherwhise
+ * @c:is parameter for our function
  * Return:1 or 0
  */
 int _isalpha(int c)
