@@ -16,17 +16,12 @@ void times_table(void)
 		{
 			cmp = i * j;
 			_putchar(cmp + '0');
-			_putchar(',');
 			if (j <= 8)
-			{
 				_putchar('.');
-				_putchar('.');
-			} else
-			{
-				_putchar('\n');
-			}
 			j++;
 		}
+		_putchar('\n');
 		i++;
+		j = 0;
 	}
 }
