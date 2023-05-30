@@ -7,15 +7,18 @@
  */
 int main(void)
 {
-	/*declaring variable*/
-	char c;
-	/*initialization*/
-	c = 'a';
-	while (c <= 'z')
+	void print_alphabet(void)
 	{
-		_putchar('c');
-		c++;
+		/*declaring variable*/
+		char c;
+		/*initialization*/
+		c = 'a';
+		while (c <= 'z')
+		{
+			_putchar('c');
+			c++;
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 	return (0);
 }
