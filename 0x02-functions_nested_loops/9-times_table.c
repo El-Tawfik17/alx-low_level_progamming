@@ -25,11 +25,11 @@ void times_table(void)
 				_putchar(fstd + '0');
 				_putchar(lstd + '0');
 			}
-
- 
-
 			if (j <= 8)
-				_putchar('.');
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			j++;
 		}
 		_putchar('\n');
