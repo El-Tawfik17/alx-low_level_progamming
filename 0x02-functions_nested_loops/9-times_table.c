@@ -15,17 +15,18 @@ void times_table(void)
 		while (j < 10)
 		{
 			cmp = i * j;
-			if (j > 1 && cmp <= 9)
+			if (j > 0 && cmp <= 9)
 			{
 				_putchar(' ');
 				_putchar(' ');
-			} else if (j > 1 && cmp > 9)
+			} else if (j > 0 && cmp > 9)
 			{
 				_putchar(' ');
 			}
 			if (cmp <= 9)
 			{
 				_putchar(cmp + '0');
+				if (j <= 8)
 				_putchar(',');
 			} else
 			{
@@ -33,6 +34,7 @@ void times_table(void)
 				fstd = (cmp - lstd) / 10;
 				_putchar(fstd + '0');
 				_putchar(lstd + '0');
+				if (j <= 8)
 				_putchar(',');
 			}
 			j++;
