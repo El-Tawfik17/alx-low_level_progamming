@@ -7,7 +7,7 @@
 void times_table(void)
 {
 	/*Declaring Variables*/
-	int i, j, cmp;
+	int i, j, cmp, lstd, fstd;
 	/*initialization*/
 	i = j = 0;
 	while (i < 10)
@@ -15,7 +15,19 @@ void times_table(void)
 		while (j < 10)
 		{
 			cmp = i * j;
-			_putchar(cmp + '0');
+			if (cmp <= 9)
+			{
+				_putchar(cmp + '0');
+			} else
+			{
+				lstd = cmp % 10;
+				fstd = (cmp - lstd) / 10;
+				_putchar(fstd + '0');
+				_putchar(lstd + '0');
+			}
+
+ 
+
 			if (j <= 8)
 				_putchar('.');
 			j++;
