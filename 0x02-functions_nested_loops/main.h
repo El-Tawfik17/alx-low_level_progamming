@@ -12,6 +12,5 @@ int print_last_digit(int);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
-void nat_print_table(int cmp);
-void print_times_table(int n);
+oid print_times_table(int n);
 #endif

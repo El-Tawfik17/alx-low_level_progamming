@@ -27,7 +27,19 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 				}
-				nat_print_table(cmp);
+				if (cmp <= 9)
+				{
+					_putchar(cmp + '0');
+				} else if (cmp > 9 && cmp <= 99)
+				{
+					_putchar(((cmp - (cmp % 10)) / 10) + '0');
+					_putchar((cmp % 10) + '0');
+				} else if (cmp > 99)
+				{
+					_putchar(((cmp - (cmp % 100)) / 100) + '0');
+					_putchar((((cmp % 100) - (cmp % 10)) / 10) + '0');
+					_putchar((cmp % 10) + '0');
+				}
 				if (j <= (n - 1))
 					_putchar(',');
 				j++;
