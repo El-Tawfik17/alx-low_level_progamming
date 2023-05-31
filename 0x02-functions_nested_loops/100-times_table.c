@@ -12,9 +12,9 @@ void print_times_table(int n)
 
 	if (n <= 15 && n > 0)
 	{
-		while (i < n)
+		while (i < n + 1)
 		{
-			while (j < n)
+			while (j < n +1)
 			{
 				cmp = i * j;
 				if (j > 0 && cmp <= 9)
@@ -38,7 +38,7 @@ void print_times_table(int n)
 					_putchar((((cmp % 100) - (cmp % 10)) / 10) + '0');
 					_putchar((cmp % 10) + '0');
 				}
-				if (j <= (n - 2))
+				if (j <= (n - 1))
 					_putchar(',');
 				j++;
 			}
