@@ -6,7 +6,7 @@
  * @n:is parameter for our function
  * Return:1 -1  or 0
  */
-int _print_sign(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
