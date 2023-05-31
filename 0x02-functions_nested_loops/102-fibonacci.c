@@ -16,9 +16,9 @@ int main(void)
 	{
 		iii = ii + i;
 		if (j <= 48)
-			printf("%d, ", iii);
+			printf("%ld, ", iii);
 		else
-			printf("%d", iii);
+			printf("%ld", iii);
 		i = ii;
 		ii = iii;
 		j++;
