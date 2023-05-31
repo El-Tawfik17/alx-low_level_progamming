@@ -1,8 +1,6 @@
 #include "main.h"
 /**
  * print_times_table - function
- * Description:This function prints the 9 times
- * tables,starting with 0
  * @n :parameter of function
  */
 void print_times_table(int n)
