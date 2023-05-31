@@ -7,7 +7,6 @@
  */
 void print_times_table(int n)
 {
-	/*Declaring Variables*/
 	int i = 0, j = 0, cmp;
 
 	if (n <= 15 && n > 0)
@@ -21,10 +20,15 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					_putchar(' ');
+					_putchar(' ');
 				} else if (j > 0 && cmp > 9)
 				{
 					_putchar(' ');
-				}
+					_putchar(' ');
+				} else if (j > 0 && cmp > 99)
+				{
+				      _putchar(' ');
+				}	      
 				if (cmp <= 9)
 				{
 					_putchar(cmp + '0');
