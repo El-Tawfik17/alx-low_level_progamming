@@ -9,7 +9,8 @@
 int main(void)
 {
 	/*Declaring variables*/
-	int i = 0, ii = 1, iii = 0, j = 0;
+	long i = 0, ii = 1, iii = 0;
+	int j = 0;
 
 	while (j < 50)
 	{
