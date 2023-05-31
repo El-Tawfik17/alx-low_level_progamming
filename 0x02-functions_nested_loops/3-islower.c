@@ -3,6 +3,7 @@
  * _islower - function
  * Description:This function checks alphabet
  * it return 1 if it is lowercase and 0 otherwhise
+ * @c:parameter of function
  * Return:1 or 0
  */
 int _islower(int c)
