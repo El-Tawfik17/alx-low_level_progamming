@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - function
+ * print_last_digit - function
  * Description:This function checks sign
  * it return 1 if it is postive and 0 or -1 otherwhise
  * @n:is parameter for our function
@@ -12,6 +12,8 @@ int print_last_digit(int n)
 	int result;
 	/*initialization*/
 	result = n % 10;
+	if (result < 0)
+		result = (-1 * result);
 	_putchar(result + '0');
 	return (result);
 }
