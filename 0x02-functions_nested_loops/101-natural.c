@@ -17,7 +17,7 @@ int main(void)
 			cmp  = cmp + i;
 	       i++;
 	}
-	printf("%d", cmp);
+	printf("%d\n", cmp);
 	return (0);
 }
 
