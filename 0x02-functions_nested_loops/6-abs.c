@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - function
+ * _abs - function
  * Description:This function checks sign
  * it return 1 if it is postive and 0 or -1 otherwhise
  * @n:is parameter for our function
@@ -11,11 +11,9 @@ int _abs(int n)
 	if (n > 0)
 	{
 		return (n);
-	}else if (n < 0)
+	} else if (n < 0)
 	{
 		return (-n);
-	}else
-	{
-		return (0);
 	}
+		return (0);
 }
