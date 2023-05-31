@@ -9,7 +9,7 @@
 int main(void)
 {
 	/*Declaring variables*/
-	long i = 0, ii = 1, iii = 0;
+	unsigned long i = 0, ii = 1, iii = 0;
 	int j = 0;
 
 	while (j < 98)
