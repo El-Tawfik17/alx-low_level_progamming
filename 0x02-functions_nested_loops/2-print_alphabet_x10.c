@@ -21,6 +21,7 @@ void print_alphabet_x10(void)
 			c++;
 		}
 		i++;
+		c = 0;
 	}
 	_putchar('\n');
 }
