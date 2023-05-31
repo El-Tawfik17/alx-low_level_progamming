@@ -13,7 +13,7 @@ int main(void)
 	while ( i < 1024)
 	{
 		if (((i % 3) == 0) || ((i % 5) == 0))
-			cmp + = i;
+			cmp  = cmp + i;
 	       i++;
 	}
 	printf("The sum of all the multiples of 3 or 5 below 1024 is %d", cmp);
