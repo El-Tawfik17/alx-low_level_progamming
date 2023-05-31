@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - function
+ * print_sign - function
  * Description:This function checks sign
  * it return 1 if it is postive and 0 or -1 otherwhise
  * @n:is parameter for our function
