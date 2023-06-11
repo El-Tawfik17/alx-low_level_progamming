@@ -11,6 +11,10 @@
  */
 char *_strcat(char *dest, char *src)
 {
+	/*declaring pointer*/
+	char *p;
+	/*intialization*/
+	p = dest;
 	while (*dest != '\0')
 	{
 		cmp++;
@@ -23,4 +27,5 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 	*(dest--) = '\0';
+	return (p);
 }
