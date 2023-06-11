@@ -3,7 +3,7 @@
  * _strlen - function
  * Description : this function return the string lenght
  * @s: parameter of function
- * Return : 0
+ * Return:integer
  */
 int _strlen(char *s)
 {
