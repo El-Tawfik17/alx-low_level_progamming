@@ -13,7 +13,7 @@ char *_memset(char *s, char b, unsigned int n)
 	/*Declaring variable*/
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = n; i >= 0; i--)
 		s[i] = b;
 	return (s);
 }
