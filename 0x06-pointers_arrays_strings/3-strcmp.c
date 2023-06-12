@@ -9,18 +9,16 @@
 int _strcmp(char *s1, char *s2)
 {
 	/*declaring variable*/
-	int i, j;
-	/*searching s1 and s2 length*/
-	for (i = 0; s1[i] != '\0'; i++)
+	int a = 0;
+
+	while (s1[a] != '\0')
 	{
+		if (s1[a] < s2[a])
+			return (s1[a] - s2[a]);
+		if (s1[a] > s2[a])
+			return (s1[a] - s2[a]);
+		a++;
 	}
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-	}
-	if ((i) < (j))
-		return (15);
-	if ((i) > (j))
-		return (-15);
 	return (0);
 }
 
