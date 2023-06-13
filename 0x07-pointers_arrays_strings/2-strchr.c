@@ -8,12 +8,15 @@
  */
 char *_strchr(char *s, char c)
 {
+	/*declaring variable*/
+	char *null = "NULL";
+
 	while (*s != '\0')
 	{
 		if (*s == c)
 			return (s);
 		s++;
 	}
-	return (NULL);
+	return (null);
 }
 
