@@ -10,6 +10,7 @@ char *_strchr(char *s, char c)
 {
 	/*declaring variable*/
 	int i = 0;
+	char *null = &NULL
 
 	while (s[i] != '\0')
 	{
@@ -17,6 +18,6 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		i++;
 	}
-	return NULL;
+	return null;
 }
 
