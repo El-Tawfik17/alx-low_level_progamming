@@ -10,7 +10,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	/*Declaring  variable*/
-	unsigned int i, j, cmp, boolean;
+	unsigned int i, j, cmp = 0, boolean;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
