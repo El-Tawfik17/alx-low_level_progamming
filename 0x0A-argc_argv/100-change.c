@@ -34,14 +34,14 @@ int coins(int c)
 int main(int argc, char *argv[])
 {
 
-	if (argc == 2 && *argv[1] > 0)
+	if ((argc == 2) && (atoi(argv[1]) > 0))
 	{
 		printf("%d\n", coins(atoi(argv[1])));
 	} else if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
-	} else if (*argv[1] < 0)
+	} else if ((argc == 2) && (atoi(argv[1]) < 0))
 	{
 		printf("0\n");
 	}
