@@ -33,7 +33,8 @@ void _co_str(char *ss1, char *ss2)
 	{
 		for (i = 0; ss2[i] != '\0'; i++)
 			ss1[ss1_len + i] = ss2[i];
-		ss1[ss1_len + i] = '\0';
+		ss1[ss1_len + i] = '\n';
+		ss1[ss1_len + i + 1] = '\0';
 	}
 }
 /**
@@ -54,11 +55,11 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		len += _strlen(av[i]);
 	/*alocation in memory*/
-	str = malloc(sizeof(char) * (len + 1));
+	str = malloc(sizeof(char) * (len + ac));
 	if (str == NULL)
 		return (0);
 	/*initialization for the first execution of _strlen in _co_str*/
-	str = '\0';
+	*str = '\0';
 	/*coping into str*/
 	for (i = 0; i < ac; i++)
 		_co_str(str, av[i]);
