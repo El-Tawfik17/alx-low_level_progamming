@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * alloc - function
@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 	/*declaring variable*/
 	int i, j, **tab;
 
-	if (width == NULL || height == NULL || height < 0 || width < 0)
+	if (height <= 0 || width <= 0)
 		return (0);
 
 	tab = malloc(sizeof(int) * height);
