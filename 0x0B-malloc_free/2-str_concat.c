@@ -28,10 +28,7 @@ void _co_str(char *ss1, char *ss2)
 	int i, ss1_len = 0;
 
 	ss1_len = _strlen(ss1);
-	if (ss2 == NULL)
-	{
-		ss1[ss1_len] = '\0';
-	} else
+	if (ss2 != NULL)
 	{
 		for (i = 0; ss2[i] != '\0'; i++)
 			ss1[ss1_len + i] = ss2[i];
