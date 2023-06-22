@@ -9,7 +9,7 @@
  */
 char **strtow(char *str)
 {
-	int i, str_len = 0, nb_word = 0, j = 0, m = 0;
+	int i, str_len = 0, nb_word = 0, j = 0, m = 0 k = 0;
 	char **tab;
 	/*checking the length of string*/
 	for (i = 0; str[i] != '\0'; i++)
@@ -25,7 +25,7 @@ char **strtow(char *str)
 		str_len += 1;
 		if (str[i] == ' ')
 		{
-			j += 1
+			j += 1;
 			tab[j] = malloc(sizeof(char) * (str_len + 1));
 			if (tab[j] == NULL)
 			{
@@ -38,7 +38,7 @@ char **strtow(char *str)
 		}
 
 	}
-	for (i = 0; str[i] = '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] == ' ')
 		{
