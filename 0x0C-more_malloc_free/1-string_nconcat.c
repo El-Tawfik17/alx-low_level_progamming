@@ -55,7 +55,7 @@ void _co_str_s2(char *ss1, char *ss2, unsigned int m)
 		{
 			for (i = 0; ss2[i] != '\0'; i++)
 				ss1[ss1_len + i] = ss2[i];
-		} else if (m < ss2_len)
+		} else if (m < ss2_len && m != 0)
 		{
 			for (i = 0; i < m; i++)
 				ss1[ss1_len + i] = ss2[i];
