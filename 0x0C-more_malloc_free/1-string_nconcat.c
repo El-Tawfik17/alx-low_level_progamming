@@ -45,7 +45,7 @@ void _co_str_s1(char *ss, char *sss)
  */
 void _co_str_s2(char *ss1, char *ss2, unsigned int m)
 {
-	unsigned int i, ss1_len = 0, ss2_len = 0;
+	unsigned int i = 0, ss1_len = 0, ss2_len = 0;
 
 	ss1_len = _strlen(ss1);
 	if (ss2 != NULL)
