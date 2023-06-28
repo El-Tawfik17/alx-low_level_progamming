@@ -77,13 +77,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int s1_len, s2_len;
 	char *str;
 	/*return value on failure*/
-	if (s1 != NULL && s2 != NULL)
-	{
-		/*checking s1 length*/
+	/*checking s1 length*/
+	if (s1 != NULL)
 		s1_len = _strlen(s1);
 		/*checking  s2 length*/
+	if (s2 != NULL)
 		s2_len = _strlen(s2);
-	}
 	if (s1 == NULL)
 		s1_len = 0;
 	if (s2 == NULL || n == 0)
