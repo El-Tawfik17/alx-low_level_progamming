@@ -86,11 +86,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (s1 == NULL)
 		s1_len = 0;
-	if (s2 == NULL)
+	if (s2 == NULL || n == 0)
 		s2_len = 0;
-	if (n >= s2_len)
+	if (n >= s2_len && n != 0)
 		str = malloc(sizeof(char) * (s1_len + s2_len + 1));
-	else if (n < s2_len)
+	else if (n < s2_len || n == 0)
 		str = malloc(sizeof(char) * (s1_len + n + 1));
 	if (str == NULL)
 		return (0);
