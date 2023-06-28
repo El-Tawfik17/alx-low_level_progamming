@@ -27,12 +27,12 @@ void _co_str_s1(char *ss, char *sss)
 {
 	int i, ss1_len = 0;
 
-	ss1_len = _strlen(ss1);
-	if (ss2 != NULL)
+	ss1_len = _strlen(ss);
+	if (sss != NULL)
 	{
-		for (i = 0; ss2[i] != '\0'; i++)
-			ss1[ss1_len + i] = ss2[i];
-		ss1[ss1_len + i] = '\0';
+		for (i = 0; sss[i] != '\0'; i++)
+			ss[ss1_len + i] = sss[i];
+		ss[ss1_len + i] = '\0';
 	}
 }
 /**
@@ -45,7 +45,7 @@ void _co_str_s1(char *ss, char *sss)
  */
 void _co_str_s2(char *ss1, char *ss2, unsigned int m)
 {
-	int i, ss1_len = 0, ss2_len = 0;
+	unsigned int i, ss1_len = 0, ss2_len = 0;
 
 	ss1_len = _strlen(ss1);
 	if (ss2 != NULL)
@@ -74,7 +74,7 @@ void _co_str_s2(char *ss1, char *ss2, unsigned int m)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	/*declaring variable*/
-	int s1_len, s2_len;
+	unsigned int s1_len, s2_len;
 	char *str;
 	/*return value on failure*/
 	if (s1 != NULL && s2 != NULL)
@@ -88,10 +88,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1_len = 0;
 	if (s2 == NULL)
 		s2_len = 0;
-	if (m >= s2_len)
+	if (n >= s2_len)
 		str = malloc(sizeof(char) * (s1_len + s2_len + 1));
-	else if (m < s2_len)
-		str = malloc(sizeof(char) * (s1_len + m + 1));
+	else if (n < s2_len)
+		str = malloc(sizeof(char) * (s1_len + n + 1));
 	if (str == NULL)
 		return (0);
 	/*initialization*/
@@ -99,6 +99,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*copy of s1*/
 	_co_str_s1(str, s1);
 	/*copy of s2*/
-	_co_str_s2(str, s2);
+	_co_str_s2(str, s2, n);
 	return (str);
 }
