@@ -42,9 +42,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	nptr = malloc(new_size);
 	if (nptr == NULL)
 		return (0);
-	if (old_size < new_size)
+	if (old_size < new_size && ptr != NULL)
 		_copyto(ptr, nptr, old_size);
-	else
+	else if (old_size > new_size && ptr != NULL)
 		_copyto(ptr, nptr, new_size);
 	free(ptr);
 	return (nptr);
