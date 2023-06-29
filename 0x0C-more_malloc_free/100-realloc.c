@@ -14,8 +14,10 @@ void _copyto(void *p, void *pp, unsigned int size)
 {
 	unsigned int i;
 
+	int *pt = (int *)p;
+	int *ppt = (int *)pp;
 	for (i = 0; i < size; i++)
-		p[i] = pp[i];
+		pt[i] = ppt[i];
 }
 /**
  * _realloc - function
