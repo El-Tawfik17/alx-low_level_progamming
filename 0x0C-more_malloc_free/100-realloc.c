@@ -16,6 +16,7 @@ void _copyto(void *p, void *pp, unsigned int size)
 
 	char *pt = (char *)p;
 	char *ppt = (char *)pp;
+
 	for (i = 0; i < size; i++)
 		pt[i] = ppt[i];
 }
